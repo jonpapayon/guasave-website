@@ -10,17 +10,29 @@
     --yellow: #E3E084;
     --very-light-yellow: #FFFEE2;
     --brown-green: #96955F;
+    --very-dark-blue: #3C515B;
 }
 body {
     font-family: 'Prompt', sans-serif;
 }
-
+/* hero section  */
+.hero-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
 .hero-title-container {
     padding: 20px;
     margin-bottom: 20px;
-
 }
-.hero-title-container h1,h2 {
+.hero-title-container h1 {
+    color: var(--very-dark-blue);
+}
+.hero-title-container h2 {
     color: var(--dark-blue);
 }
 .hero-title-container span {
@@ -35,50 +47,139 @@ body {
     gap: 20px;
 }
 .hero-booking {
+    max-width: 300px;
+    margin-top: 40px;
     padding: 8px;
     border: 2px solid #578196;
     display: grid;
     place-items: center;
-    color: var(--dark-blue);
+    color: var(--very-dark-blue);
 }
 .hero-content-container {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
-.hero-tostada img{
-    display: none;
+.hero-image-container img {
+    width: 300px;
 }
-@media screen and (min-width: 320px) {
-    .hero-image-container img {
-        width: 250px;
+@media screen and (max-width: 425px) {
+    .hero-section {
+        margin: 20px;
+    }
+    .hero-title-container {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 768px) {
     .hero-image-container img {
-        width: 300px;
+        width: 400px;
+    }
+    .hero-section {
+        margin: 12;
+        flex-wrap: nowrap;
+    }
+    .hero-title-container {
+        padding: 0;
     }
 }
-@media screen and (min-width: 700px) {
-    .hero-image-container img {
-        width: 500px;
-    }
-}
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1024px) {
     .hero-image-container img {
         width: 600px;
     }
-    .hero-tostada img{
-        display: block;
-        width: 200px;
+    .hero-section {
+        margin: 80px;
+        flex-wrap: nowrap;
     }
 }
-@media screen and (min-width: 1200px) {
-    .hero-image-container img {
-        width: 900px;
+
+/* product section */
+.prodcut-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 40px;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.product-image-container img{
+    max-width: 400px;
+}
+.product-title-container {
+    max-width: 400px;
+    color: var(--very-dark-blue);
+}
+@media screen and (max-width: 425px) {
+    .product-image-container img{
+        max-width: 300px;
     }
-    .hero-tostada img{
-        display: block;
-        width: 200px;
+    .prodcut-section {
+        margin: 20px;
+        margin-top: 40px;
+        gap: 20px;
+        flex-direction: column-reverse;
     }
+}
+@media screen and (min-width: 768px) {
+    .prodcut-section {
+        flex-wrap: nowrap;
+    }
+}
+/* categories section  */
+.categories-section {
+    margin-top: 80px;
+    background-color: var(--brown-green);
+    padding: 80px;
+}
+.categories-section h2 {
+    color: white;
+    margin-bottom: 40px;
+}
+.categories-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.categories-card {
+    background-color: white;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.plate {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.categorie-dish {
+    color: var(--very-dark-blue);
+    padding: 12px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.categorie-name {
+    padding: 12px;
+}
+.categorie-name .tostadas{
+    color: var(--light-blue);
+}
+.categorie-name .ceviches{
+    color: var(--yellow);
+}
+.categorie-name .platillos {
+    color: var(--pink);
+}
+.categorie-name .aguachiles {
+    color: var(--brown-green);
 }
