@@ -11,6 +11,7 @@
     --very-light-yellow: #FFFEE2;
     --brown-green: #96955F;
     --very-dark-blue: #3C515B;
+    --gray: #E4ECF0;
 }
 body {
     font-family: 'Prompt', sans-serif;
@@ -144,7 +145,7 @@ body {
 .categories-card-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
     justify-content: center;
     align-items: center;
 }
@@ -182,4 +183,58 @@ body {
 }
 .categorie-name .aguachiles {
     color: var(--brown-green);
+}
+/* best selling section */
+.best-selling-section {
+    margin: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+.best-selling-img-container img {
+    width: 300px;
+}
+.best-selling-title-container {
+    color: var(--dark-blue);
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.best-selling-title-container span {
+    color: var(--pink);
+}
+.best-selling-card {
+    padding: 12px;
+    background-color: var(--gray);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.best-selling-card span{
+    color: var(--very-dark-blue);
+    font-size: 24px;
+}
+.best-selling-title-container .selected {
+    background-color: var(--very-dark-blue);
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.best-selling-title-container .selected span{
+    color: white;
+}
+@media screen and (max-width:425px) {
+    .best-selling-section {
+        margin: 20px;
+    }
+}
+@media screen and (min-width:425px) {
+    .best-selling-img-container img {
+        width: 400px;
+    }
 }
