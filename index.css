@@ -300,3 +300,17 @@ body {
         width: 400px;
     }
 }
+/* testimonial section */
+.testimonial-section {
+    margin: 20px;
+    display: grid;
+    place-items: center;
+}
+.testimonial-container {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
