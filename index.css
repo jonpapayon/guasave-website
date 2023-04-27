@@ -113,8 +113,14 @@ body {
     max-width: 400px;
 }
 .product-title-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     max-width: 400px;
     color: var(--very-dark-blue);
+}
+.product-title-container img {
+    width: 300px;
 }
 @media screen and (max-width: 425px) {
     .product-image-container img{
@@ -171,6 +177,14 @@ body {
 }
 .categorie-name {
     padding: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.categorie-name i {
+    color: var(--very-dark-blue);
 }
 .categorie-name .tostadas{
     color: var(--light-blue);
@@ -215,6 +229,7 @@ body {
     gap: 20px;
     align-items: center;
     justify-content: space-between;
+    color: black;
 }
 .best-selling-card span{
     color: var(--very-dark-blue);
@@ -233,8 +248,55 @@ body {
         margin: 20px;
     }
 }
-@media screen and (min-width:425px) {
+@media screen and (min-width: 425px) {
     .best-selling-img-container img {
+        width: 400px;
+    }
+}
+/* delivery container */
+.delivery-section {
+    margin: 80px;
+    padding: 80px;
+    background-color: var(--very-light-yellow);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.delivery-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 400px;
+}
+.delivery-img-container img {
+    width: 300px;
+}
+.delivery-content-container div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.delivery-content-container i {
+    color: var(--brown-green);
+    width: 30px;
+}
+@media screen and (max-width: 425px) {
+    .delivery-section {
+        margin: 20px;
+        padding: 12px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .delivery-section {
+        flex-wrap: nowrap;
+    }
+    .delivery-img-container img {
         width: 400px;
     }
 }
