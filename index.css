@@ -227,7 +227,7 @@ body {
 .delivery-section {
     margin: 80px;
     padding: 80px;
-    background-color: var(--white-yellow);
+    background-color: var(--pink);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
