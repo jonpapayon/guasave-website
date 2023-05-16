@@ -81,7 +81,7 @@ body {
 }
 /* categories section  */
 .categories-section {
-    background-color: var(--brown-green);
+    background-color: var(--light-blue);
     padding: 80px;
 }
 .categories-section h2 {
@@ -142,7 +142,7 @@ body {
     color: var(--very-dark-blue);
 }
 .categorie-name .tostadas{
-    color: var(--light-blue);
+    color: var(--brown-green);
 }
 .categorie-name .ceviches{
     color: var(--yellow);
@@ -227,13 +227,14 @@ body {
 .delivery-section {
     margin: 80px;
     padding: 80px;
-    background-color: var(--pink);
+    background-color: var(--dark-blue);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-evenly;
     align-items: center;
+    color: var(--gray);
 }
 .delivery-content-container {
     display: flex;
@@ -253,7 +254,7 @@ body {
     gap: 10px;
 }
 .delivery-content-container i {
-    color: var(--brown-green);
+    color: var(--gray);
     width: 30px;
 }
 @media screen and (max-width: 425px) {
@@ -283,4 +284,13 @@ body {
     justify-content: center;
     align-items: center;
     gap: 8px;
+}
+footer {
+    background-color: var(--pink);
+    padding: 40px;
+}
+footer a {
+    color: var(--very-dark-blue);
+    text-decoration: none;
+    cursor: pointer;
 }
